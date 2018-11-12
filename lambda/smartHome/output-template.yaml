@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Provides the basic framework for a skill adapter for a smart home skill.
+Parameters:
+  TopicNameParameter:
+    Type: String
+Resources:
+  alexasmarthomeskilladapter:
+    Properties:
+      CodeUri: s3://aws-sar-publishing/c31266482ace99de470bcfcfaf2c7135
+      Description: Provides the basic framework for a skill adapter for a smart home
+        skill.
+      Handler: index.handler
+      MemorySize: 128
+      Policies:
+      - SNSPublishMessagePolicy:
+          TopicName:
+            Ref: TopicNameParameter
+      Runtime: nodejs8.10
+      Timeout: 7
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31

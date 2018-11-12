@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-IN": {
+          "summary": "My smart home",
+          "examplePhrases": [
+            "Alexa, Turn on Hall Lights",
+            "Alexa, Turn on Bedroom light",
+            "Alexa, Turn off Fan"
+          ],
+          "keywords": [],
+          "name": "Kousic Smart Home",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/d463/e0a7ed08f12d4416a21dac2f0ecda163/APP_ICON?versionId=aq0RDMdZvNmyEgonEEj51TBejoRpfabb&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1540824564&Signature=4WMXn8%2B2z3eoqJJGQfkj3Vz2zZ0%3D",
+          "description": "My smart home",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/8575/c7e31c646a1149a1ad6366aaf5047418/APP_ICON_LARGE?versionId=kWYLV9_7uRYsEJ4o5iHSbWaQOXeRzZGM&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1540824564&Signature=vvmaeZ4xmICntk4YXgKXRcCZK7Q%3D"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Alexa, Turn on lights",
+      "category": "SMART_HOME",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "smartHome": {
+        "endpoint": {
+          "sourceDir": "lambda\\smartHome"
+        },
+        "protocolVersion": "2"
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-IN": {
+          "termsOfUseUrl": "http://automateem.in/",
+          "privacyPolicyUrl": "http://automateem.in/"
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
