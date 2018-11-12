@@ -259,6 +259,8 @@ const USER_DEVICES = [
     
 ];
 
+//This is a dummy comment
+
 /**
  * Utility functions
  */
